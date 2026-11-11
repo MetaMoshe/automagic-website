@@ -124,7 +124,7 @@ h1 .hl::after{content:"";position:absolute;right:-.16em;top:-.16em;width:.16em;h
 @media (max-width:560px){.poster .pv-copy{right:18px}.poster .pv-copy b{font-size:20px}.poster .pv-play{top:45%}}
 
 /* client strip */
-.strip{padding-block:28px;border-bottom:1px solid var(--line);background:var(--bg-2)}
+.strip{margin-top:96px;padding-block:28px;border-top:1px solid var(--line);background:var(--bg-2)}
 .strip .wrap{display:flex;align-items:center;gap:20px 36px;flex-wrap:wrap}
 .strip-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);flex:none}
 .clients{display:flex;flex-wrap:wrap;gap:10px 30px;list-style:none;margin:0;padding:0;font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--muted);letter-spacing:-.01em}
@@ -175,39 +175,6 @@ h1 .hl::after{content:"";position:absolute;right:-.16em;top:-.16em;width:.16em;h
   .phase::after{left:-22px;top:2px}
 }
 
-/* work */
-.work{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
-.case{grid-column:span 4;display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;min-width:0;transition:border-color .2s,transform .2s}
-.case:hover{border-color:rgba(127,211,228,.5);transform:translateY(-2px)}
-.case.big{grid-column:span 12;grid-template-rows:none;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
-.case-art{background:var(--bg-2);border-bottom:1px solid var(--line);min-height:170px;position:relative;overflow:hidden}
-.case.big .case-art{border-bottom:0;border-right:1px solid var(--line);min-height:300px}
-.case-art svg{position:absolute;inset:0;width:100%;height:100%}
-.case-body{padding:26px;display:grid;gap:14px;align-content:start}
-.case.big .case-body{padding:36px;align-content:center}
-.case-meta{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border:1px solid var(--line-2);border-radius:4px;color:var(--muted)}
-.chip.c{border-color:rgba(127,211,228,.4);color:var(--cyan)}
-.case h3{font-size:22px}
-.case.big h3{font-size:30px;letter-spacing:-.02em}
-.case p{color:var(--muted);font-size:15.5px}
-.figs{display:flex;flex-wrap:wrap;gap:12px 28px;padding-top:6px}
-.figs div{display:grid;gap:2px}
-.figs b{font-family:var(--font-display);font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.1;font-variant-numeric:tabular-nums}
-.figs span{font-size:13px;color:var(--faint);line-height:1.35;max-width:18ch}
-.more{display:inline-flex;gap:8px;align-items:center;font-family:var(--font-display);font-weight:600;color:var(--cyan);font-size:15px;margin-top:4px}
-.case:hover .more .arr{transform:translateX(3px)}
-.more .arr{transition:transform .15s}
-.work-foot{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;color:var(--muted);font-size:15px}
-@media (max-width:960px){.case,.case.big{grid-column:span 12}.case.big{grid-template-columns:minmax(0,1fr)}.case.big .case-art{border-right:0;border-bottom:1px solid var(--line);min-height:220px}.case.big .case-body{padding:26px}}
-.art-line{fill:none;stroke:var(--line-2);stroke-width:1}
-.art-hot{fill:none;stroke:var(--cyan);stroke-width:1.4}
-.art-box{fill:var(--surface-2);stroke:var(--line-2)}
-.art-boxc{fill:var(--cyan-deep);stroke:rgba(127,211,228,.5)}
-.art-sq{fill:var(--cyan)}
-.art-t{font-family:var(--font-mono);font-size:10px;fill:var(--muted);letter-spacing:.05em}
-.art-tc{font-family:var(--font-mono);font-size:10px;fill:var(--cyan-hi);letter-spacing:.05em}
-
 /* principles + return */
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
 @media (max-width:960px){.split{grid-template-columns:minmax(0,1fr);gap:56px}}
@@ -239,7 +206,7 @@ h1 .hl::after{content:"";position:absolute;right:-.16em;top:-.16em;width:.16em;h
 @media (max-width:520px){.model{grid-template-columns:1fr}.model div{border-right:0;border-bottom:1px solid var(--line)}.model div:last-child{border-bottom:0}}
 
 /* cta */
-.cta{margin-top:110px;border-top:1px solid var(--line);background:radial-gradient(ellipse 60% 120% at 85% 100%,rgba(127,211,228,.12),transparent 60%),var(--bg-2)}
+.cta{margin-top:0;border-top:1px solid var(--line);background:radial-gradient(ellipse 60% 120% at 85% 100%,rgba(127,211,228,.12),transparent 60%),var(--bg-2)}
 .cta .wrap{padding-block:84px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center}
 .cta h2{font-size:clamp(32px,4.4vw,56px)}
 .cta-copy{display:grid;gap:18px}
@@ -277,7 +244,6 @@ footer a:hover{color:var(--ink)}
     <nav class="nav-links" aria-label="Main">
       <a href="#services">Services</a>
       <a href="#process">How we work</a>
-      <a href="#work">Work</a>
       <a href="#approach">Approach</a>
     </nav>
     <a class="btn btn-primary" href="https://cal.com/moshe-david/ai-transformation-discovery?overlayCalendar=true" target="_blank" rel="noopener">Book a call</a>
@@ -360,14 +326,6 @@ footer a:hover{color:var(--ink)}
   </div>
 </section>
 
-<section class="strip" aria-label="Clients">
-  <div class="wrap">
-    <span class="strip-label">Trusted by</span>
-    <ul class="clients">
-      <li>Hunter Executive</li><li>Zugi.ai</li><li>Revscale</li><li>Ignite Visibility</li><li>Venture X</li><li>AFC Urgent Care</li><li>SR Accord</li><li>Tero</li><li>The Founder's Chair</li>
-    </ul>
-  </div>
-</section>
 
 
 <section class="video-sec" id="video" aria-labelledby="video-h">
@@ -448,82 +406,6 @@ footer a:hover{color:var(--ink)}
   </div>
 </section>
 
-<section class="sec" id="work">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="label">Selected work</span>
-      <h2>Built, shipped and in use</h2>
-      <p class="lede">Three engagements told in full on our portfolio: the problem, what we built, how it works and the results.</p>
-    </div>
-    <div class="work">
-      <a class="case big" href="https://automagic.onrender.com/hunter/" target="_blank" rel="noopener">
-        <div class="case-art" aria-hidden="true">
-          <svg viewBox="0 0 520 300" preserveAspectRatio="xMidYMid slice">
-            <rect class="art-boxc" x="190" y="112" width="140" height="76" rx="6"/>
-            <text class="art-tc" x="260" y="146" text-anchor="middle">PESA</text>
-            <text class="art-t" x="260" y="164" text-anchor="middle">12 AGENTS · 4 SUITES</text>
-            <g>
-              <path class="art-hot" d="M190 130 L120 70"/><path class="art-line" d="M190 170 L120 230"/><path class="art-hot" d="M330 130 L400 70"/><path class="art-line" d="M330 170 L400 230"/>
-              <rect class="art-box" x="40" y="44" width="120" height="44" rx="5"/><text class="art-t" x="100" y="64" text-anchor="middle">LEAD</text><text class="art-t" x="100" y="78" text-anchor="middle" style="fill:var(--faint)">INTELLIGENCE</text>
-              <rect class="art-box" x="40" y="212" width="120" height="44" rx="5"/><text class="art-t" x="100" y="232" text-anchor="middle">SOURCING</text><text class="art-t" x="100" y="246" text-anchor="middle" style="fill:var(--faint)">AGENT</text>
-              <rect class="art-box" x="360" y="44" width="120" height="44" rx="5"/><text class="art-t" x="420" y="64" text-anchor="middle">RELATIONSHIP</text><text class="art-t" x="420" y="78" text-anchor="middle" style="fill:var(--faint)">SCORE</text>
-              <rect class="art-box" x="360" y="212" width="120" height="44" rx="5"/><text class="art-t" x="420" y="232" text-anchor="middle">MEETING</text><text class="art-t" x="420" y="246" text-anchor="middle" style="fill:var(--faint)">INTELLIGENCE</text>
-              <rect class="art-sq" x="255" y="98" width="10" height="10"/>
-            </g>
-          </svg>
-        </div>
-        <div class="case-body">
-          <div class="case-meta"><span class="chip c">AI Transformation</span><span class="chip">Executive search · Israel</span></div>
-          <h3>Hunter Executive</h3>
-          <p>A governed AI operating layer on top of the firm's CRM, so every consultant spots mandates earlier, researches in minutes instead of hours and keeps key relationships warm. PESA gives each consultant a Personal Executive Search Assistant; Placement Radar surfaces mandate signals before competitors see them.</p>
-          <div class="figs"><div><b>12</b><span>specialist agents in four suites</span></div><div><b>3</b><span>build waves</span></div><div><b>10 mo</b><span>discovery to final wave</span></div></div>
-          <span class="more">Read the case study <span class="arr" aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="case" href="https://automagic.onrender.com/zugi/" target="_blank" rel="noopener" style="grid-column:span 6">
-        <div class="case-art" aria-hidden="true">
-          <svg viewBox="0 0 520 170" preserveAspectRatio="xMidYMid slice">
-            <path class="art-line" d="M40 130 L480 130"/>
-            <path class="art-hot" d="M40 130 C120 128 150 104 210 96 S330 60 380 52 S450 40 480 36"/>
-            <rect class="art-sq" x="375" y="47" width="10" height="10"/>
-            <text class="art-t" x="40" y="152">RESEARCH 2023</text><text class="art-t" x="260" y="152" text-anchor="middle">PLATFORM</text><text class="art-t" x="480" y="152" text-anchor="end">PIVOT</text>
-            <text class="art-tc" x="392" y="44">MULTI-LLM</text>
-          </svg>
-        </div>
-        <div class="case-body">
-          <div class="case-meta"><span class="chip c">AI Product Build</span><span class="chip">Private markets · UK</span></div>
-          <h3>Zugi.ai</h3>
-          <p>We built the entire investment intelligence platform for private-market investors: hybrid reasoning, deterministic scoring, ZugiGPT and Co-Pilot, then led a six-month pivot to a multi-LLM vertical platform.</p>
-          <div class="figs"><div><b>200+</b><span>design partners onboarded</span></div><div><b>~3 yrs</b><span>research to go-to-market</span></div></div>
-          <span class="more">Read the case study <span class="arr" aria-hidden="true">→</span></span>
-        </div>
-      </a>
-
-      <a class="case" href="https://automagic.onrender.com/revscale/" target="_blank" rel="noopener" style="grid-column:span 6">
-        <div class="case-art" aria-hidden="true">
-          <svg viewBox="0 0 520 170" preserveAspectRatio="xMidYMid slice">
-            <g id="locs">
-              <rect class="art-box" x="40" y="40" width="34" height="34" rx="4"/><rect class="art-box" x="88" y="40" width="34" height="34" rx="4"/><rect class="art-boxc" x="136" y="40" width="34" height="34" rx="4"/><rect class="art-box" x="184" y="40" width="34" height="34" rx="4"/><rect class="art-boxc" x="232" y="40" width="34" height="34" rx="4"/><rect class="art-box" x="280" y="40" width="34" height="34" rx="4"/><rect class="art-box" x="328" y="40" width="34" height="34" rx="4"/><rect class="art-boxc" x="376" y="40" width="34" height="34" rx="4"/><rect class="art-box" x="424" y="40" width="34" height="34" rx="4"/>
-              <rect class="art-box" x="40" y="88" width="34" height="34" rx="4"/><rect class="art-boxc" x="88" y="88" width="34" height="34" rx="4"/><rect class="art-box" x="136" y="88" width="34" height="34" rx="4"/><rect class="art-box" x="184" y="88" width="34" height="34" rx="4"/><rect class="art-box" x="232" y="88" width="34" height="34" rx="4"/><rect class="art-boxc" x="280" y="88" width="34" height="34" rx="4"/><rect class="art-box" x="328" y="88" width="34" height="34" rx="4"/><rect class="art-box" x="376" y="88" width="34" height="34" rx="4"/><rect class="art-boxc" x="424" y="88" width="34" height="34" rx="4"/>
-              <rect class="art-sq" x="148" y="52" width="10" height="10"/><rect class="art-sq" x="244" y="52" width="10" height="10"/><rect class="art-sq" x="388" y="52" width="10" height="10"/><rect class="art-sq" x="100" y="100" width="10" height="10"/><rect class="art-sq" x="292" y="100" width="10" height="10"/><rect class="art-sq" x="436" y="100" width="10" height="10"/>
-            </g>
-            <text class="art-t" x="40" y="152">EVERY LOCATION, ONE PLATFORM</text>
-          </svg>
-        </div>
-        <div class="case-body">
-          <div class="case-meta"><span class="chip c">AI Product Build</span><span class="chip">Franchise networks · US</span></div>
-          <h3>Revscale</h3>
-          <p>We designed and built the full platform: AI agents that answer, call, chat and prospect at every location, and FranchiseHub, which runs a franchise from first candidate to open unit.</p>
-          <div class="figs"><div><b>$100M+</b><span>pipeline created by agents</span></div><div><b>&lt;60s</b><span>to answer every new lead</span></div><div><b>300+</b><span>locations onboarded</span></div></div>
-          <span class="more">Read the case study <span class="arr" aria-hidden="true">→</span></span>
-        </div>
-      </a>
-    </div>
-    <div class="work-foot"><span>Nine client profiles, by engagement type, company size and market.</span><a class="btn btn-ghost" href="https://automagic.onrender.com/" target="_blank" rel="noopener">Explore the portfolio <span class="arr" aria-hidden="true">→</span></a></div>
-  </div>
-</section>
-
 <section class="sec" id="approach">
   <div class="wrap split">
     <div>
@@ -567,6 +449,15 @@ footer a:hover{color:var(--ink)}
       <div><span class="k">Build</span><b>Fixed price per tool</b><span>Every agent or tool priced and agreed before its wave starts.</span></div>
     </div>
     <p class="model-foot">External costs such as AI models, hosting and data providers are billed to you directly, at cost.</p>
+  </div>
+</section>
+
+<section class="strip" aria-label="Clients">
+  <div class="wrap">
+    <span class="strip-label">Trusted by</span>
+    <ul class="clients">
+      <li>Hunter Executive</li><li>Zugi.ai</li><li>Revscale</li><li>Ignite Visibility</li><li>Venture X</li><li>AFC Urgent Care</li><li>SR Accord</li><li>Tero</li><li>The Founder's Chair</li>
+    </ul>
   </div>
 </section>
 
