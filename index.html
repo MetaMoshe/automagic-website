@@ -129,15 +129,6 @@ h1 .hl::after{content:"";position:absolute;right:-.16em;top:-.16em;width:.16em;h
 .strip-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);flex:none}
 .clients{display:flex;flex-wrap:wrap;gap:10px 30px;list-style:none;margin:0;padding:0;font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--muted);letter-spacing:-.01em}
 
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:0}
-.stat{padding:26px 24px;display:grid;gap:6px;align-content:start;border-right:1px solid var(--line)}
-.stat:last-child{border-right:0}
-.stat b{font-family:var(--font-display);font-weight:600;font-size:clamp(34px,3.6vw,46px);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-.stat b small{font-size:.5em;color:var(--cyan);margin-left:2px}
-.stat span{color:var(--muted);font-size:14.5px;line-height:1.45}
-@media (max-width:820px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-
 /* engagements */
 .eng{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .eng-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:30px 26px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:16px;min-width:0;transition:border-color .2s}
@@ -344,17 +335,6 @@ footer a:hover{color:var(--ink)}
   </div>
 </section>
 
-<section class="sec" aria-label="At a glance">
-  <div class="wrap">
-    <div class="stats">
-      <div class="stat"><b>3–4<small>days</small></b><span>Discovery sprint to a prioritised AI roadmap</span></div>
-      <div class="stat"><b>5<small>phases</small></b><span>From discovery to running and evolving what we build</span></div>
-      <div class="stat"><b>9<small>clients</small></b><span>Across search, private markets, franchising, healthcare and finance</span></div>
-      <div class="stat"><b>100<small>%</small></b><span>Of what we build is owned by you</span></div>
-    </div>
-  </div>
-</section>
-
 <section class="sec" id="services">
   <div class="wrap">
     <div class="sec-head">
@@ -385,6 +365,22 @@ footer a:hover{color:var(--ink)}
         <p class="eng-ex">Examples: <a href="https://automagic.onrender.com/zugi/" target="_blank" rel="noopener">Zugi.ai</a> and <a href="https://automagic.onrender.com/revscale/" target="_blank" rel="noopener">Revscale</a></p>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="model-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Engagement model</span>
+      <h2 id="model-h">Pay for leadership, expertise and what's built, each on its own terms</h2>
+    </div>
+    <div class="model">
+      <div><span class="k">Start</span><b>Discovery</b><span>A fixed-price 3–4 day investigation, report and leadership readout.</span></div>
+      <div><span class="k">Lead</span><b>Fractional Transformation Lead</b><span>A senior lead for your AI programme: roadmap, governance, vendors and adoption.</span></div>
+      <div><span class="k">Support</span><b>Monthly consultancy</b><span>Architecture, delivery management, monitoring and ongoing changes.</span></div>
+      <div><span class="k">Build</span><b>Fixed price per tool</b><span>Every agent or tool priced and agreed before its wave starts.</span></div>
+    </div>
+    <p class="model-foot">External costs such as AI models, hosting and data providers are billed to you directly, at cost.</p>
   </div>
 </section>
 
@@ -433,22 +429,6 @@ footer a:hover{color:var(--ink)}
       </div>
       <p class="formula">ROI = (<em>time returned</em> + <em>attributed revenue</em> − total cost) ÷ total cost</p>
     </div>
-  </div>
-</section>
-
-<section class="sec" aria-labelledby="model-h">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="label">Engagement model</span>
-      <h2 id="model-h">Pay for leadership, expertise and what's built, each on its own terms</h2>
-    </div>
-    <div class="model">
-      <div><span class="k">Start</span><b>Discovery</b><span>A fixed-price 3–4 day investigation, report and leadership readout.</span></div>
-      <div><span class="k">Lead</span><b>Fractional Transformation Lead</b><span>A senior lead for your AI programme: roadmap, governance, vendors and adoption.</span></div>
-      <div><span class="k">Support</span><b>Monthly consultancy</b><span>Architecture, delivery management, monitoring and ongoing changes.</span></div>
-      <div><span class="k">Build</span><b>Fixed price per tool</b><span>Every agent or tool priced and agreed before its wave starts.</span></div>
-    </div>
-    <p class="model-foot">External costs such as AI models, hosting and data providers are billed to you directly, at cost.</p>
   </div>
 </section>
 
